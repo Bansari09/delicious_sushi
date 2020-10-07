@@ -17,31 +17,36 @@
                     <img src="images/logo.png" alt="Logo" class="logo_block">
                 </div>
                 
-                <nav class="header-nav">
-                        <!-- <input type="checkbox" id="check">
+                <nav  class="">
+                    <div class="header-nav">
+                        <input type="checkbox" id="check">
                         <label for="check">
                               <i class="fa fa-bars" id="btn" onclick="openNav()"></i>
-                        </label> -->
+                        </label>
                         <ul class="menu " id="myTopnav">
-                            <!-- <span><i class="fa fa-times" id="cancel" class="closebtn" onclick="closeNav()"></i></span> -->
+                            <span><i class="fa fa-times" id="cancel" class="closebtn" onclick="closeNav()"></i></span>
                             <li><a href="#" class="active">HOME</a></li>
                             <li><a href="#">PRODUCT</a></li>
                             <li><a href="#">PROMO</a></li>
                             <li><a href="#">ABOUT</a></li>
                             <li><a href="#">CONTACT</a></li>
+                            <li>
                             <div class="search-container">
+                            
                                 <form action="/action_page.php">
                                   <input type="text"  name="search">
-                                  <button type="submit"><i class="fa fa-search"></i></button>
+                                  
+                                  <button type="submit" class="srch"><i class="fa fa-search"></i></button>
                                 </form>
                               </div>
-                            <!-- <li class="menu-list">
+                            </li>
+                            <li class="menu-list">
                                 <div class="menubar"></div>
                                 <div class="menubar"></div>
                                 <div class="menubar"></div>
-                            </li> -->
+                            </li>
                         </ul>
-                        
+                    </div> 
                 </nav>
             
             </div>
@@ -75,8 +80,13 @@
                 <img src="images/banner_border.png" />
             </div>
             <div class="best_seller">
+                
                 <div class="container">
-                <div class="best_seller">
+                    <div class="seller_images ">
+                        <img src="images/vector1.png" alt="" class="b_left png_images">
+                        <img src="images/vector2.png" alt="" class="b_right png_images">
+                    </div>
+                <div class="best_seller_inside">
                         <h1>BEST SELLER</h1>
                         <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
                         <div class="blocks"> 
@@ -122,7 +132,12 @@
             <img src="images/testy_border.png" />
         </div>
         <div class="stastices">
+            <div class="stat_images ">
+                <img src="images/fvector.png" alt="" class="s_left png_images">
+                <img src="images/s1.png" alt="" class="s_right png_images">
+            </div>
             <div class="container">
+                <div class="stastices_inside">
                 <h1>STASTICES</h1>
                 <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
                 <div class="blocks"> 
@@ -137,16 +152,21 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
         
     </section> 
 
 
     <section class="delicious_section" >
+        <div class="top_d ">
+            <img src="images/vector2.png" alt="" class="png_images">
+        </div>
+        <div class="left_d ">
+            <img src="images/d_left.png" alt="" class="png_images">
+        </div>
         <div class="delicious">
-            <div class="top_d">
-                <img src="images/f1.png" alt="">
-            </div>
+
                 <div class="container">
                    
                     <div class="delicious-text">
@@ -158,9 +178,13 @@
                         <img src="images/delicious.png" alt="">
                     </div>
                 </div>
+                
         </div>
-        <div class="right_d">
-            <img src="images/f1.png" alt="">
+        <div class="right_d ">
+            <img src="images/f1.png " alt="" class="png_images">
+        </div>
+        <div class="bottom_d ">
+            <img src="images/vector1.png" alt="" class="png_images">
         </div>
     </section>
 
@@ -185,16 +209,16 @@
     </section>
 
     <section class="subscribe_section" >
-        <div class="left_corner">
+        <div class="left_corner ">
             <img src="images/s_left.png" alt="">
         </div>
-        <div class="right_corner">
-            <img src="images/s_right.png" alt="" class="lower">
-            <img src="images/vector2.png" alt="" class="upper">
+        <div class="right_corner ">
+            <img src="images/s_right.png" alt="" class="lower ">
+            <img src="images/vector2.png" alt="" class="upper png_images">
         </div>
         <div class="subscribe">
             <div class="container">
-                <img src="images/s1.png" alt="">
+                <img src="images/s1.png" alt="" class="png_images">
                 
                 <div class="sub_text">
                     <h1>SUBSCRIBE</h1>
@@ -204,7 +228,7 @@
                 </div>
                 
             </div>
-            <div class="bottom"> <img src="images/s2.png" alt=""></div>
+            <div class="bottom "> <img src="images/s2.png" alt="" class="png_images"></div>
             
         </div>
         
@@ -213,10 +237,14 @@
 
     <section class="footer_section">
        <div class="footer_border">
-           <img src="images/footer_border.png" alt="">
+           <img src="images/footer_border.png" alt="" class="f_border">
+           <img src="images/fvector.png" alt="" class="f_png png_images">
        </div>
-       <img src="images/f1.png" alt="">
+      
         <div class="footer">
+        <div class="footer_png ">
+            <img src="images/f1.png" alt="" class="png_images">
+        </div>
             <div class="container">
                
                 <nav class="footer-nav">
@@ -275,6 +303,13 @@
             $(this).parent().toggleClass('open');
             });
         });
+        function openNav() {
+          document.getElementById("myTopnav").style.width = "100%";
+        }
+    
+        function closeNav() {
+          document.getElementById("myTopnav").style.width = "0";
+        }
     </script>
 </body>
 </html>
